@@ -43,12 +43,24 @@ footer {
 
 
 header {
-    height: 64px;
+    height: 128px;
     background-color: var(--primary);
     color: var(--secondary);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-end;
+}
+
+#logo {
+    display: block;
+    height: 100%;
+    width: auto;
+}
+
+#logo_container {
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 #logo_text {
