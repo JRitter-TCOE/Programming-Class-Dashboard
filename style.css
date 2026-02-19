@@ -20,7 +20,7 @@ body {
 }
 
 #content_center {
-    flex:4;
+    width: 70%;
     background-color: rgba(0, 0, 0, 0.514);
 }
 
@@ -59,12 +59,13 @@ header {
 
 #logo_container {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     height: 100%;
 }
 
 #logo_text {
     font-weight: bold;
+    font-size: 24pt;
 }
 
 main {
@@ -82,9 +83,66 @@ nav > a {
     color: var(--secondary);
     text-decoration: none;
     font-weight: bold;
+    font-size: 16pt;
 }
 
 nav > a:hover {
     color: var(--accent);
 }
 
+.post_preview {
+    background-color: var(--primary);
+    color: var(--secondary);
+    display: flow-root;
+    padding: 16px;
+    border-radius: 15px;
+    margin: 16px;
+    border: 2px solid var(--accent);
+}
+
+.post_preview>img {
+    object-fit: contain;
+    float: right;
+}
+
+#resources {
+    color: var(--secondary);
+    padding: 16px;
+}
+
+#resources a {
+    color: var(--secondary);
+
+}
+
+.slide {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    align-items: center;
+    width: 256px;
+    height: 256px;
+    background-color: var(--primary);
+    border-radius: 15px;
+    border: 2px solid var(--accent);
+    margin: 8px 16px;
+}
+
+.slide:hover {
+    background-color: var(--accent);
+    cursor: pointer;
+}
+
+.slide > img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) var(--primary);
+}
